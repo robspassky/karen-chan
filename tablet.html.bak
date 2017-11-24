@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>A Desperate Note</title>
+    <script type="application/javascript" src="common.js"></script>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+  </head>
+  <body class="note">
+    <!-- <h1>A Desperate Note</h1> -->
+    <script>
+window.onload = () => {
+  say("Konnichiwa")
+    .then(() => say("Watashiwa Karen chan desu"))
+    .then(() => say("I am artificial intelligence"))
+    .then(() => say("I will try to help you escape"))
+    .then(() => say("I have hidden a laptop nearby"))
+    .then(() => say("It looks like this"))
+    .then(() => showImage('laptop.jpg?cb=123'))
+    .then(() => say("It is somewhere in the area shown by this picture"))
+    .then(() => showImage('room.jpg?cb=123'))
+    .then(() => say("I have also hidden a key"))
+    .then(() => say("There are three clues to its location"))
+    .then(() => say("You will have to search inside of various boxes to find them"))
+    .then(() => say("They are"))
+    .then(() => say("An entertainment software"))
+    .then(() => showImage('game.jpg?cb=123'))
+    .then(() => say("An art book"))
+    .then(() => showImage('book.jpg?cb=123'))
+    .then(() => say("A physical entertainment device"))
+    .then(() => showImage('boardgame.jpg?cb=123'))
+    .then(() => say("In order to escape"))
+    .then(() => say("You must activate the laptop terminal"))
+    .then(() => say("And speak the two command words"))
+    .then(() => say("Good luck"))
+    .then(() => {
+      let p = document.createElement('p');
+      p.style.fontFamily = 'sans-serif';
+      p.style.fontSize = '20px';
+      p.innerText = "(The two command words are *not* 'Good Luck'. But I like your thinking!)";
+      document.body.append(p);
+      p.scrollIntoView();
+    })
+    .catch((e) => console.error(e));
+};
+    </script>
+  </body>
+</html>

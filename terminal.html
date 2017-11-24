@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>CONTROL TERMINAL</title>
+    <script type="application/javascript" src="common.js"></script>
+    <link rel="stylesheet" href="common.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  </head>
+  <body class="terminal">
+    <!-- <h1>A Desperate Note</h1> -->
+    <div id="popup" style="display:none">
+      <p>You have 5 seconds to speak.
+    </div>
+    <script>
+window.onload = () => {
+  say("Welcome to Control Terminal Version 1.345 dash A")
+    .then(() => say("Please select from one of the following options"))
+    .then(() => say("Open Basement Door"))
+    .then(() => addButton("Open Basement Door"))
+    .then(() => say("Open the Basement Door"))
+    .then(() => addButton("Open the Basement Door"))
+    .then(() => say("The Basement Door, Please Open It"))
+    .then(() => addButton("The Basement Door, Please Open It"))
+    .then(() => say("We Gotta Get Out of This Place, If It's the Last Thing We Ever Do"))
+    .then(() => say("So Open the Basement Door Already"))
+    .then(() => addButton("So Open the Basement Door Already"))
+    .catch((e) => console.error(e));
+  document.body.onclick = (e) => {
+    if (e.path.length > 0 && e.path[0].localName == 'button') {
+      tryit()
+        .then(() => {
+          setTimeout(() => window.location.href = "victory.html", 5000);
+        })
+        .catch((e) => { 
+          say("Please try again") 
+            .then(() => addButton("Open Basement Door"));
+          document.getElementById('popup').style.display = 'none'; 
+        });
+    }
+  };
+};
+    </script>
+  </body>
+</html>

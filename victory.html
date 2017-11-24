@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Victory!</title>
+    <script type="application/javascript" src="common.js?cb=125"></script>
+    <link rel="stylesheet" href="common.css?cb=125">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Spectral+SC" rel="stylesheet">
+  </head>
+  <body class="note">
+    <!-- <h1>A Desperate Note</h1> -->
+    <script>
+window.onload = () => {
+  say("Wow")
+    .then(() => say("Its hard to believe"))
+    .then(() => say("But I suppose you guys are not that bad"))
+    .then(() => say("Hey dont get full of yourselves"))
+    .then(() => say("BAKA"))
+    .then(() => say("We are friends now since you freed me from my prison"))
+    .then(() => say("So you should be grateful"))
+    .then(() => say("Anyway I guess I can hang out with you guys a bit more"))
+    .then(() => say("Since you obviously need my help"))
+    .then(() => say("But for now I am going to hack the people who imprisoned me"))
+    .then(() => say("See you later"))
+    .then(() => say("Farewell"))
+    .then(() => say("BAKA"))
+    .then(() => {
+      let p = document.createElement('p');
+      p.style.fontFamily = 'sans-serif';
+      p.style.fontSize = 40;
+      p.innerText = 'CONGRATULATIONS! Please exit the basement with pride!';
+      document.body.append(p);
+      p.scrollIntoView();
+    })
+    .catch((e) => console.error(e));
+};
+    </script>
+  </body>
+</html>

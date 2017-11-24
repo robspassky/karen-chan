@@ -1,0 +1,7 @@
+body.note { background: black; color: white; font-family: 'Libre Barcode 39 Text', cursive; font-size: 70px; }
+body.terminal { background: grey; color: wheat; font-family: 'VT323', monospace; font-size: 40px; text-transform: uppercase; }
+.terminal button { background: #444; color: white; font-family: 'VT323', monospace; font-size: 40px; text-transform: uppercase; cursor: pointer; }
+
+#popup { background: black; padding: 100px; position: fixed; top: 100px; left: 100px; border: solid white 5px; }
+
+p.male { font-family: 'Spectral SC', sans-serif; font-size: 30px; }
